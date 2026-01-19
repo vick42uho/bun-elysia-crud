@@ -35,7 +35,8 @@ bun add @prisma/client @prisma/adapter-pg pg
 ```bash
 bun add -d prisma prismabox typescript @types/pg
 ```
-Step 2: ตั้งค่าฐานข้อมูล (Database Configuration)
+
+### Step 2: ตั้งค่าฐานข้อมูล (Database Configuration)
 1.เริ่มระบบ Prisma
 ```bash
 bunx prisma init
@@ -93,7 +94,7 @@ export default defineConfig({
 bunx prisma generate
 bunx prisma db push
 ```
-Step 3: เขียนโค้ด API
+### Step 3: เขียนโค้ด API
 แก้ไขไฟล์ src/index.ts โดยใส่โค้ดดังนี้:
 ```bash
 import { Elysia, t } from 'elysia'
@@ -220,7 +221,7 @@ if (import.meta.main || process.env.NODE_ENV !== 'production') {
   )
 }
 ```
-Step 4: ทดสอบระบบ (Testing)
+### Step 4: ทดสอบระบบ (Testing)
 1. เพิ่ม Script ใน package.json
 ```JSON
 "scripts": {
@@ -238,7 +239,7 @@ bun run dev
 
 ยิง API ผ่าน Postman/Thunder Client ไปที่ http://localhost:3000/products
 
-Step 5: นำขึ้นออนไลน์ (Deploy to Vercel)
+### Step 5: นำขึ้นออนไลน์ (Deploy to Vercel)
 1. สร้างไฟล์ vercel.json
 ```JSON
 {
@@ -272,8 +273,8 @@ Push Code ขึ้น GitHub
 สำคัญ: ไปที่ Settings -> Environment Variables บน Vercel แล้วเพิ่ม DATABASE_URL (ใช้ค่าเดียวกับใน .env ที่มี pgbouncer=true)
 
 📚 References
-Bun Documentation
-
-ElysiaJS Documentation
-
-Prisma Documentation
+Bun Documentation [https://bun.sh/](https://bun.sh/)
+ElysiaJS Documentation [https://elysiajs.com/](https://elysiajs.com/)
+Prisma Documentation [https://prisma.io/docs/](https://prisma.io/docs/)
+Vercel Documentation [https://vercel.com/docs](https://vercel.com/docs)
+Supabase Documentation [https://supabase.com/docs](https://supabase.com/docs)

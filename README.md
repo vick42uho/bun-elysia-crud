@@ -272,9 +272,10 @@ Push Code ขึ้น GitHub
 
 สำคัญ: ไปที่ Settings -> Environment Variables บน Vercel แล้วเพิ่ม DATABASE_URL (ใช้ค่าเดียวกับใน .env ที่มี pgbouncer=true)
 
-📚 References
-Bun Documentation [https://bun.sh/](https://bun.sh/)
-ElysiaJS Documentation [https://elysiajs.com/](https://elysiajs.com/)
-Prisma Documentation [https://prisma.io/docs/](https://prisma.io/docs/)
-Vercel Documentation [https://vercel.com/docs](https://vercel.com/docs)
-Supabase Documentation [https://supabase.com/docs](https://supabase.com/docs)
+## 📚 References
+
+- [Bun Documentation](https://bun.sh/)
+- [ElysiaJS Documentation](https://elysiajs.com/)
+- [Prisma Documentation](https://prisma.io/docs/)
+- [Vercel Documentation](https://vercel.com/docs)
+- [Supabase Documentation](https://supabase.com/docs)
